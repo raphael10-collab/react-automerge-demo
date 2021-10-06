@@ -39,9 +39,9 @@ function App() {
     <div className="App">
       <div>
         <header></header>
-        <button onClick={addDoc}>Open</button>
-        {`#each Object.entries(docs) as [id, doc]` }
-          {id} {doc} 
+        <button onClick={handleDecrement}>-</button>
+        <h5>Count is {count}</h5>
+        <button onClick={handleIncrement}>+</button>
       </div>
       <button onClick={() => setCount(0)}>Reset</button>
 
