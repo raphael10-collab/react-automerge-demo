@@ -1,0 +1,45 @@
+{
+  "name": "sync-demo",
+  "version": "0.0.0",
+  "scripts": {
+    "type-check": "tsc -w",
+    "start": "react-scripts start",
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "lint": "eslint . --ext ts"
+  },
+  "devDependencies": {
+    "@svitejs/vite-plugin-svelte": "^0.11.1",
+    "@types/react": "^17.0.27",
+    "@types/react-dom": "^17.0.9",
+    "@typescript-eslint/eslint-plugin": "^4.22.0",
+    "@typescript-eslint/parser": "^4.22.0",
+    "eslint": "^7.25.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-airbnb-typescript": "^12.3.1",
+    "eslint-plugin-import": "^2.22.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^4.0.3",
+    "svelte-preprocess": "^4.6.9",
+    "typescript": "^4.2.4",
+    "vite": "^2.1.0"
+  },
+  "dependencies": {
+    "automerge": "https://github.com/automerge/automerge",
+    "idb": "^6.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}
