@@ -29,18 +29,19 @@ const inOutStream = new stream.Duplex({
     callback()
   },
   read(size) {
-    this.push("HELLOOOOOOOOOOO")
+    //this.push("HELLOOOOOOOOOOO")
+    onetime(this)
   }
 })
 
 // https://stackoverflow.com/questions/12713564/function-in-javascript-that-can-be-called-only-once
-let onetime = (function(socket) {
+let onetime = (function(that) {
   let executed = false
-  return function(socket) {
+  return function(that) {
     if (!executed) {
       executed = true
       console.log("PROVA")
-      inOutStream.pipe(socket).pipe(process.stdout)
+      that.push("HELLLLLLLLLLLLLO")
     }
   }
 })()
@@ -51,8 +52,8 @@ swarm.on('connection', (socket, info) => {
   console.log('new connection!', info)
   // you can now use the socket as a stream, eg:
   //process.stdin.pipe(socket).pipe(process.stdout)
-  //inOutStream.pipe(socket).pipe(process.stdout)
-  onetime(socket)
+  inOutStream.pipe(socket).pipe(process.stdout)
+  //onetime(socket)
 })
 
 
