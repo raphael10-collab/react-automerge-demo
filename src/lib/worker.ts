@@ -5,6 +5,7 @@ import {
 import type { BackendToFrontendMessage, GrossEventDataProtocol } from './types'
 import { DB } from './db'
 
+// https://developer.mozilla.org/en-US/docs/Web/API/WorkerGlobalScope
 declare const self: WorkerGlobalScope
 
 // ERRRRR

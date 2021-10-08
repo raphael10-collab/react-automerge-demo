@@ -8,7 +8,7 @@
       "esnext",
       "scripthost"
     ],
-    "importsNotUsedAsValues": "error",
+    //"importsNotUsedAsValues": "error",
     "noImplicitAny": true,
     "isolatedModules": true,
     "esModuleInterop": true,

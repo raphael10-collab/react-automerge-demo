@@ -1,6 +1,7 @@
 {
   "name": "sync-demo",
   "version": "0.0.0",
+  "type": "module",
   "scripts": {
     "type-check": "tsc -w",
     "start": "react-scripts start",
@@ -27,8 +28,11 @@
     "vite": "^2.1.0"
   },
   "dependencies": {
+    "@hyperswarm/replicator": "^2.0.2",
     "automerge": "https://github.com/automerge/automerge",
-    "idb": "^6.0.0"
+    "hyperswarm": "^2.15.3",
+    "idb": "^6.0.0",
+    "pump": "^3.0.0"
   },
   "browserslist": {
     "production": [
